@@ -4,7 +4,7 @@ public class Squirrel {
 
     private int numOfConesInNest;
 
-    private int age;
+    private String name;
 
     private boolean hasPartner;
 
@@ -14,10 +14,14 @@ public class Squirrel {
     }
 
     //constructor 2
-    public Squirrel(int weight, int numOfConesInNest, int age) {
+    public Squirrel(int weight, int numOfConesInNest, String name) {
         this.weight = weight;
         this.numOfConesInNest = numOfConesInNest;
-        this.age = age;
+        this.name = name;
+    }
+
+    public Squirrel(String name){
+        this.name = name;
     }
 
     public int getWeight() {

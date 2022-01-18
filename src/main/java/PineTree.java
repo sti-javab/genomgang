@@ -51,7 +51,7 @@ public class PineTree {
         return squirrels;
     }
 
-    public int getNumOfSquirrelsInNest(){
+    public int getNumOfSquirrelsInNest() {
         return squirrels.size();
     }
 
@@ -67,11 +67,11 @@ public class PineTree {
         this.ulla = ulla;
     }
 
-    public boolean fall(int age, int height, int windSpeed){
-        return true;
+    public boolean fall(int age, int height, int windSpeed) {
+        return age > 500 && height > 35 && windSpeed > 170;
     }
 
-    static class PineCone{
+    static class PineCone {
 
     }
 }
