@@ -18,4 +18,6 @@ public abstract class Animal {
         this.weight = weight;
     }
 
+    public abstract boolean eat(Object food);
+
 }

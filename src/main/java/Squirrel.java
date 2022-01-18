@@ -11,6 +11,8 @@ public class Squirrel extends Animal{
         super(weight, false);
     }
 
+
+
     //constructor 2
     public Squirrel(int weight, int numOfConesInNest, String name) {
         super(weight);
@@ -36,6 +38,11 @@ public class Squirrel extends Animal{
 
     public void setNumOfConesInNest(int numOfConesInNest) {
         this.numOfConesInNest = numOfConesInNest;
+    }
+
+    @Override
+    public boolean eat(Object food) {
+        return food instanceof PineTree.PineCone;
     }
 
     public boolean eat(PineTree pineTree){

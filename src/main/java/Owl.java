@@ -47,4 +47,8 @@ public class Owl extends Animal{
         return "Wingspan: "+ wingSpan + ", hungry: " + hungry + ", age: " + age;
     }
 
+    @Override
+    public boolean eat(Object food) {
+        return false;
+    }
 }

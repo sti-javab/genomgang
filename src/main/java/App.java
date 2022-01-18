@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class App {
 
@@ -10,7 +11,7 @@ public class App {
                 new Squirrel("Puff")
         );
 
-        Owl ulla = new Owl(80, true, 10);
+        Owl ulla = new Owl(80, true, 10, 150);
 
         PineTree pineTree = new PineTree(100, squirrels, ulla);
 
@@ -20,7 +21,11 @@ public class App {
 
         System.out.println(ulla);
 
-        System.out.println(pineTree);
+        System.out.println(pineTree); //@FIXME: create a @Override toString for PineTree class
+
+        boolean hasEaten = squirrels.get(0).eat(new PineTree.PineCone());
+
+        System.out.println("Ekorren har ätit: " + hasEaten);
     }
 
     private static void owlPrint(boolean ullaHasEaten, PineTree pineTree ){
