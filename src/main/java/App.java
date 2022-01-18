@@ -20,6 +20,7 @@ public class App {
 
         System.out.println(ulla);
 
+        System.out.println(pineTree);
     }
 
     private static void owlPrint(boolean ullaHasEaten, PineTree pineTree ){

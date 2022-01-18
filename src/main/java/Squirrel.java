@@ -1,6 +1,4 @@
-public class Squirrel {
-
-    private int weight;
+public class Squirrel extends Animal{
 
     private int numOfConesInNest;
 
@@ -10,12 +8,12 @@ public class Squirrel {
 
     //constructor 1
     public Squirrel(int weight) {
-        this.weight = weight;
+        super(weight, false);
     }
 
     //constructor 2
     public Squirrel(int weight, int numOfConesInNest, String name) {
-        this.weight = weight;
+        super(weight);
         this.numOfConesInNest = numOfConesInNest;
         this.name = name;
     }

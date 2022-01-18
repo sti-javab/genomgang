@@ -1,16 +1,12 @@
-public class Owl {
+public class Owl extends Animal{
 
     private int wingSpan;
 
-    private boolean hungry;
-
     private int age;
 
-    private int weight;
-
-    public Owl(int wingSpan, boolean hungry, int age) {
+    public Owl(int wingSpan, boolean hungry, int age, int weight) {
+        super(weight, hungry);
         this.wingSpan = wingSpan;
-        this.hungry = hungry;
         this.age = age;
     }
 
