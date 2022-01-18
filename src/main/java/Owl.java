@@ -45,4 +45,10 @@ public class Owl {
         }
         return false;
     }
+
+    @Override
+    public String toString(){
+        return "Wingspan: "+ wingSpan + ", hungry: " + hungry + ", age: " + age;
+    }
+
 }
