@@ -38,8 +38,11 @@ public class Owl {
         this.hungry = hungry;
     }
 
-    public boolean eat(){
-        return true;
+    public boolean eat(PineTree pineTree) {
+        int numOfSquirrels = pineTree.getNumOfSquirrelsInNest();
+        if (isHungry()) {
+            return numOfSquirrels < 10;
+        }
+        return false;
     }
-
 }

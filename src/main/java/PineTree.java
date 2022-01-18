@@ -70,4 +70,8 @@ public class PineTree {
     public boolean fall(int age, int height, int windSpeed){
         return true;
     }
+
+    static class PineCone{
+
+    }
 }

@@ -36,7 +36,7 @@ public class Squirrel {
         this.numOfConesInNest = numOfConesInNest;
     }
 
-    public boolean eat(){
-        return true;
+    public boolean eat(PineTree pineTree){
+        return pineTree.getNumOfCones() > 0;
     }
 }
